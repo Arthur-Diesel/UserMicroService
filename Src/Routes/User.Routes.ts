@@ -1,15 +1,17 @@
 import { router } from '.'
-import { userLoginRules, validateUserLoginRequest } from '../Middlewares/UserLogin.Validator'
-import { register } from '../Controllers/User.Controller'
+import { userBaseRules } from '../Middlewares/User.Validator'
+import { userRegisterRules } from '../Middlewares/UserRegister.Validator'
+import { validateUserRequest } from '../Middlewares/User.Validator'
+import { register, login } from '../Controllers/User.Controller'
 
-/*
-router.post('/login', 
-    userLoginRules(), 
-    validateUserLoginRequest,
-    login)
-*/
-
-router.post('/login', 
-    userLoginRules(), 
-    validateUserLoginRequest,
+router.post('/register',
+    userRegisterRules(), 
+    validateUserRequest,
     register)
+
+router.post('/login', 
+    userBaseRules(),
+    validateUserRequest,
+    login)
+
+export default router

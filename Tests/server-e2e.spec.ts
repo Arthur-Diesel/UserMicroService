@@ -6,6 +6,7 @@ describe('Express Application', () => {
         await request(server)
             .get('/')
             .expect(200, {
+                "success": true,
                 "message":"Hello from AuthMicroService!"
             })
     })
