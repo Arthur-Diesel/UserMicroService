@@ -1,9 +1,7 @@
 # 👥 UserMicroService 
 ## Tem o objetivo de lidar com o cadastro e o login de usuários em um ambiente de microsserviços.
 
-<hr />
-
-## **📫 Rotas:** 
+<h2><b>📫 Rotas: </b></h2>
 
 ### **Login**
 * **URL**
