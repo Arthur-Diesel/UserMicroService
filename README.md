@@ -1,4 +1,4 @@
-# 👥 UserMicroService 
+# 👥 UsersMicroService 
 <p> Tem o objetivo de lidar com o cadastro e o login de usuários em um ambiente de microsserviços. </p>
 
 <h2><b>📫 Rotas: </b></h2>
