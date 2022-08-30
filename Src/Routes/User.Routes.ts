@@ -1,8 +1,8 @@
 import { router } from '.'
-import { userBaseRules } from '../Middlewares/User.Validator'
-import { userRegisterRules } from '../Middlewares/UserRegister.Validator'
-import { validateUserRequest } from '../Middlewares/User.Validator'
-import { register, login } from '../Controllers/User.Controller'
+import { userBaseRules } from '../Middlewares/User.validator'
+import { userRegisterRules } from '../Middlewares/UserRegister.validator'
+import { validateUserRequest } from '../Middlewares/User.validator'
+import { register, login } from '../Controllers/User.controller'
 
 router.post('/register',
     userRegisterRules(), 

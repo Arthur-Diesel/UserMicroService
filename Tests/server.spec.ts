@@ -7,7 +7,7 @@ describe('Express Application', () => {
             .get('/')
             .expect(200, {
                 "success": true,
-                "message":"Hello from AuthMicroService!"
+                "message":"Hello from UsersMicroService!"
             })
     })
 })
