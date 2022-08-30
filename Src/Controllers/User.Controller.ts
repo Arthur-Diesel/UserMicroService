@@ -21,7 +21,7 @@ export async function login (req: Request, res: Response) {
             return res.status(400).json({success: false, error: 'Invalid password!'})
         }
     } catch (err) {
-        return res.status(400).json({
+        return res.status(500).json({
             success: false,
             error: err
         })
@@ -39,9 +39,9 @@ export async function register (req: Request, res: Response) {
             data: newUser.id
         })
     } catch (err) {
-        return res.status(400).json({
+        return res.status(500).json({
             success: false,
-            error: err 
+            error: err
         })
     }
 }

@@ -11,32 +11,10 @@ datasource db {
 }
 
 model User {
-  id        String    @id @default(uuid())
-  name      String
-  email     String    @unique
-  password  String
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  Pattern   Pattern[]
-}
-
-model Pattern {
-  id           String        @id @default(uuid())
-  name         String
-  problem      String
-  solution     String
-  consequences Consequence[]
-  createdAt    DateTime      @default(now())
-  updatedAt    DateTime      @updatedAt
-  createdBy    User?         @relation(fields: [userId], references: [id])
-  userId       String?
-}
-
-model Consequence {
   id        String   @id @default(uuid())
-  text      String
-  Pattern   Pattern? @relation(fields: [patternId], references: [id])
-  patternId String?
+  name      String
+  email     String   @unique
+  password  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
