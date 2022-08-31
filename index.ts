@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express'
 import cors from 'cors'
-import UserRoutes from './Src/Routes/User.routes'
+import UserRoutes from './Src/Routes/UserRoutes'
 export const server = express()
 
 server.use(cors())
