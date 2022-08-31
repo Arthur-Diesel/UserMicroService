@@ -1,5 +1,5 @@
 import { check } from 'express-validator'
-import { notEmptyMessage, userBaseRules } from './User.validator'
+import { notEmptyMessage, userBaseRules } from './UserValidator'
 
 export const userRegisterRules = () => {
     return [
